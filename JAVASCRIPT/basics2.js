@@ -218,43 +218,105 @@ let house  =100;
 
 //  ====================================================================
 // Arrow functions : 
-let sayHello = () =>{
-    console.log("hello baby!");
-}
+// let sayHello = () =>{
+//     console.log("hello baby!");
+// }
 
-sayHello();
-//one liner (used only for one statement to execute)
-const add = (a, b ) => a+b;
-console.log(add(4,5));
+// sayHello();
+// //one liner (used only for one statement to execute)
+// const add = (a, b ) => a+b;
+// console.log(add(4,5));
 
-// 'argumets' keyword in arrow function do not work instead we use spread keywords 
-// example 
-const addnum = (...nums) =>{
-    console.log(nums);
-};
-addnum(1,23,4,5,6,7,5);
-// hoisting in arrow function do not work .
-const sayhey = () =>{
-     console.log("hey there !!!");
+// // 'argumets' keyword in arrow function do not work instead we use spread keywords 
+// // example 
+// const addnum = (...nums) =>{
+//     console.log(nums);
+// };
+// addnum(1,23,4,5,6,7,5);
+// // hoisting in arrow function do not work .
+// const sayhey = () =>{
+//      console.log("hey there !!!");
 
-};
+// };
 
-sayhey();
+// sayhey();
 
-// This keyword  in arrow function refer to the browser that is global scope.
+// // This keyword  in arrow function refer to the browser that is global scope.
 
 
-// +===================================================================
-// Higher order function and call backs 
-// Higher order function are those function that takes a function as argument 
+// // +===================================================================
+// // Higher order function and call backs 
+// // Higher order function are those function that takes a function as argument 
+// // example
+// function add33(a,b , cb){
+//   let result = a+b;
+//   cb(result);
+// }
+// add33(2,4 ,function (val){
+//     console.log(val);
+// });
+// add33(2,4 , (result) => console.log(result))
+
+// ==================================================================================
+// Arrays :
+// const students = ['Piyush' , 'aditya' , 'Anju'];
+// console.log(students.length);
+// console.log(students);
+// console.log(students[0]);
+// console.log(students[1]);
+// console.log(students[2]);
+// arrays are heterogenous in javascript that is we and add numbers , strings , boolean , emoji and object all in same array 
 // example
-function add(a,b , cb){
-  let result = a+b;
-  cb(result);
-}
-add(2,4 ,function (val){
-    console.log(val);
-});
+// const arraya22 = ['Aditya',1,true,{name: 'Anju'}];
+// console.log(arraya22)
+
+
+const students = ['Aditya' , 'Anju' , 'Dollar']
+
+// students.forEach((val) => console.log(val));
+
+// students.map((val) => console.log(val));
+
+// let ans = students.find(num => num==='Dollar');
+// console.log(ans)
+
+// let res = students.findIndex(num => num === 'Aditya');
+// console.log(res);
+
+// filtermethod():
+// const numbers = [1,2,3,4,5,6];
+// const newArr = numbers.filter((num) => num%2 == 0);
+// console.log(newArr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
