@@ -247,7 +247,14 @@ sayhey();
 // +===================================================================
 // Higher order function and call backs 
 // Higher order function are those function that takes a function as argument 
-
+// example
+function add(a,b , cb){
+  let result = a+b;
+  cb(result);
+}
+add(2,4 ,function (val){
+    console.log(val);
+});
 
 
 
